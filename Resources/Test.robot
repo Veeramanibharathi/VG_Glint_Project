@@ -92,5 +92,24 @@ TC_008 Comment Count
     Capture Element Screenshot    ${AllCommentcount}    CommentsCount.png
     Close Browser
 
+TC_009 ReportSetting
+    LogintoApp   
+    OpenEngagementSurvey
+    Reload Page
+    OpenTeamsummaryReport
+    Click Element    ${ReportSettings}
+    page should contain radio button    ${MyteamsRadio}
+    Page Should Not Contain Radio Button    ${MyteamsRadio}
+    Select Radio Button    ${MyteamsRadio}     My Teams 
+    Select Radio Button    ${MyCompanyRadio}     Company 
+    Radio Button Should Be Set To    ${MyCompanyRadio}    My Teams
+    Capture Page Screenshot    filename=Comparision.png
+    Close Browser 
+
+
+
+
+
+
 
 *** Comments ***

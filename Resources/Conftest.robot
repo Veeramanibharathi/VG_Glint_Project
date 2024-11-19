@@ -26,17 +26,11 @@ LogintoApp
     Click Button    ${Email_submit_btn}
 
     Sleep    10
-    Click Link    Reports
-
+    Click Element    ${Report}
+    
 OpenEngagementSurvey
     Click Element    ${Survey}
+
     
 OpenTeamsummaryReport
-
     Click Element    ${Team_summary}
-
-    
-
-
-
-
