@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.12 on win32)" generated="20240515 20:10:53.677" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="c:\Users\VBhara01\PycharmProjects\VG_Glint_Project\Resources\Test.robot">
+<test id="s1-t1" name="TestLoginPage" line="33">
+<kw name="LogintoApp" library="conftest">
+<kw name="Set Selenium Implicit Wait">
+<arg>10</arg>
+<msg timestamp="20240515 20:10:53.926" level="FAIL">No keyword with name 'Set Selenium Implicit Wait' found.</msg>
+<status status="FAIL" starttime="20240515 20:10:53.925" endtime="20240515 20:10:53.934"/>
+</kw>
+<kw name="Open Browser">
+<arg>https://app.vgqa.glint.cloud-dev.microsoft/session/auth</arg>
+<arg>browser=chrome</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.943" endtime="20240515 20:10:53.944"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20240515 20:10:53.949" endtime="20240515 20:10:53.950"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>id=email</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.953" endtime="20240515 20:10:53.954"/>
+</kw>
+<kw name="Click Element">
+<arg>id=email</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.958" endtime="20240515 20:10:53.959"/>
+</kw>
+<kw name="Input Text">
+<arg>id=email</arg>
+<arg>qatester@glintinc.com</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.962" endtime="20240515 20:10:53.963"/>
+</kw>
+<kw name="Click Button">
+<arg>Xpath=//button[@type='submit']</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.966" endtime="20240515 20:10:53.967"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>id=clientUuid</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.970" endtime="20240515 20:10:53.970"/>
+</kw>
+<kw name="Click Element">
+<arg>id=clientUuid</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.978" endtime="20240515 20:10:53.980"/>
+</kw>
+<kw name="Input Text">
+<arg>id=clientUuid</arg>
+<arg>qa20230302_1</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.983" endtime="20240515 20:10:53.984"/>
+</kw>
+<kw name="Click Button">
+<arg>Xpath=//button[@type='submit']</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.987" endtime="20240515 20:10:53.988"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>id=password</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.992" endtime="20240515 20:10:53.992"/>
+</kw>
+<kw name="Click Element">
+<arg>id=password</arg>
+<status status="NOT RUN" starttime="20240515 20:10:53.996" endtime="20240515 20:10:53.996"/>
+</kw>
+<kw name="Input Text">
+<arg>id=password</arg>
+<arg>Dem0@pass2</arg>
+<status status="NOT RUN" starttime="20240515 20:10:54.003" endtime="20240515 20:10:54.004"/>
+</kw>
+<kw name="Click Button">
+<arg>Xpath=//button[@type='submit']</arg>
+<status status="NOT RUN" starttime="20240515 20:10:54.009" endtime="20240515 20:10:54.010"/>
+</kw>
+<kw name="Click Button">
+<arg>id=tab-3</arg>
+<status status="NOT RUN" starttime="20240515 20:10:54.013" endtime="20240515 20:10:54.014"/>
+</kw>
+<status status="FAIL" starttime="20240515 20:10:53.921" endtime="20240515 20:10:54.016"/>
+</kw>
+<status status="FAIL" starttime="20240515 20:10:53.918" endtime="20240515 20:10:54.022">No keyword with name 'Set Selenium Implicit Wait' found.</status>
+</test>
+<status status="FAIL" starttime="20240515 20:10:53.699" endtime="20240515 20:10:54.029"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240515 20:10:53.887" level="ERROR">Error in file 'c:\Users\VBhara01\PycharmProjects\VG_Glint_Project\Resources\Test.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
+  C:\Users\VBhara01\PycharmProjects\VG_Glint_Project
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\python310.zip
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\DLLs
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20240515 20:10:53.911" level="ERROR">Error in file 'c:\Users\VBhara01\PycharmProjects\VG_Glint_Project\Resources\conftest.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
+  C:\Users\VBhara01\PycharmProjects\VG_Glint_Project
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
+  c:\Users\VBhara01\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\python310.zip
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\DLLs
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8b18adc_b1f3c24_66529ced\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

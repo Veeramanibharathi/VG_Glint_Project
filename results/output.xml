@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-27T12:53:49.451548" rpa="false" schemaversion="5">
+<suite id="s1" name="VG Glint Project" source="C:\Users\VBhara01\PycharmProjects\VG_Glint_Project">
+<suite id="s1-s1" name="Resources" source="C:\Users\VBhara01\PycharmProjects\VG_Glint_Project\Resources">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\VBhara01\PycharmProjects\VG_Glint_Project\Resources\Test.robot">
+<test id="s1-s1-s1-t1" name="TC_001 TestLoginPage" line="15">
+<kw name="LogintoApp" owner="conftest">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T12:53:49.844390" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:49.845394" level="INFO">Opening browser 'chrome' to base url 'https://app.vgqa.glint.cloud-dev.microsoft/session/auth'.</msg>
+<arg>https://app.vgqa.glint.cloud-dev.microsoft/session/auth</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-27T12:53:49.844390" elapsed="6.492575"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T12:53:56.336965" elapsed="0.045582"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:56.389545" level="INFO">Clicking element 'id=email'.</msg>
+<arg>${Email}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:56.383589" elapsed="0.531159"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:56.915761" level="INFO">Typing text 'qatester@glintinc.com' into text field 'id=email'.</msg>
+<arg>${Email}</arg>
+<arg>qatester@glintinc.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:56.914748" elapsed="0.130222"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:57.045966" level="INFO">Clicking button 'Xpath=//button[@type='submit']'.</msg>
+<arg>${Email_submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:57.044970" elapsed="0.067351"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:57.113322" level="INFO">Clicking element 'id=clientUuid'.</msg>
+<arg>${Client_Id}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:57.112321" elapsed="0.581096"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:57.694418" level="INFO">Typing text 'qa20230302_1' into text field 'id=clientUuid'.</msg>
+<arg>${Client_Id}</arg>
+<arg>qa20230302_1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:57.693417" elapsed="0.089754"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:57.784334" level="INFO">Clicking button 'Xpath=//button[@type='submit']'.</msg>
+<arg>${Email_submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:57.783171" elapsed="0.076013"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:57.860183" level="INFO">Clicking element 'id=password'.</msg>
+<arg>${Password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:57.859184" elapsed="1.331655"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:59.191842" level="INFO">Typing text 'Dem0@pass2' into text field 'id=password'.</msg>
+<arg>${Password}</arg>
+<arg>Dem0@pass2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:59.190839" elapsed="0.065236"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:53:59.257072" level="INFO">Clicking button 'Xpath=//button[@type='submit']'.</msg>
+<arg>${Email_submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:53:59.256075" elapsed="0.058409"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-27T12:54:09.316229" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-27T12:53:59.314484" elapsed="10.004774"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:54:09.322230" level="INFO">Clicking link 'Reports'.</msg>
+<arg>Reports</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:54:09.321211" elapsed="0.282812"/>
+</kw>
+<status status="PASS" start="2024-05-27T12:53:49.843412" elapsed="19.760611"/>
+</kw>
+<kw name="OpenEngagementSurvey" owner="conftest">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:54:09.606012" level="INFO">Clicking element 'Xpath=//body/glint-root/div/div[@class='appContainer copilotClosed ng-star-inserted']/div/main[@id='mainContent']/div/glint-report-landing[@class='ng-star-inserted']/glint-reports/glint-panel[@id='vg-panel0']/div[@class='light panel']/div[@class='panelBody ng-star-inserted']/div[@class='body glintPanelBody']/div[@class='surveys']/glint-facet-list[@data-id='facetList']/div[@class='ng-star-inserted']/ul[@class='ng-star-inserted']/li[2]/div[1]/span[1]'.</msg>
+<arg>${Survey}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:54:09.606012" elapsed="0.088287"/>
+</kw>
+<status status="PASS" start="2024-05-27T12:54:09.605009" elapsed="0.089603"/>
+</kw>
+<kw name="OpenTeamsummaryReport" owner="conftest">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:54:09.696603" level="INFO">Clicking element 'Xpath=//div[@class='header mleReport']'.</msg>
+<arg>${Team_summary}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:54:09.695599" elapsed="0.718299"/>
+</kw>
+<status status="PASS" start="2024-05-27T12:54:09.695599" elapsed="0.718299"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T12:54:10.926257" level="INFO">${Teamsummarytext} = Team Summary</msg>
+<var>${Teamsummarytext}</var>
+<arg>${Teamsummarytext}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T12:54:10.414900" elapsed="0.512358"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Teamsummarytext}</arg>
+<arg>Team Summary</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-27T12:54:10.927467" elapsed="0.000999"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-27T12:54:15.930383" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-27T12:54:10.929466" elapsed="5.000917"/>
+</kw>
+<status status="PASS" start="2024-05-27T12:53:49.841390" elapsed="26.095006"/>
+</test>
+<status status="PASS" start="2024-05-27T12:53:49.498955" elapsed="26.445296"/>
+</suite>
+<status status="PASS" start="2024-05-27T12:53:49.495367" elapsed="26.461052"/>
+</suite>
+<status status="PASS" start="2024-05-27T12:53:49.467570" elapsed="26.496879"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="VG Glint Project">VG Glint Project</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Resources">VG Glint Project.Resources</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test">VG Glint Project.Resources.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
